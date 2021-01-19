@@ -52,12 +52,20 @@ h2 {
 }
 
 h3 {
-    font-family: 'Raleway','Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
     @font-face:'Raleway-VariableFont_wght';
     src: local('Raleway-VariableFont_wght'), url('fonts/Raleway-VariableFont_wght.ttf'), format('ttf');
     font-size: 1.2;
-    font-weight: 900;
+    font-weight: 100;
     color: #ededed;
+}
+p {
+    color:#ededed;
+    font-weight:100;
+}
+
+a {
+    color:#6A79FF;
 }
 
 #header {

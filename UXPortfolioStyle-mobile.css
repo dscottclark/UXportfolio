@@ -6,6 +6,19 @@
 
 /* tablet landscape breakpoint */
 @media (max-width: 1080px) {
+    
+    h2 {
+        padding:2rem 0;
+    }
+
+    p {
+        padding:.5rem 0;
+    }
+
+    a {
+        color:6A79FF;
+    }
+    
     #logo {
         top:18px;
     }
@@ -366,6 +379,38 @@
         position: relative !important;
         top: 5rem !important;
     }
+
+    #social ul {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        justify-content: center;
+        grid-template-areas: "first second email separator phone";                    
+    }
+    #social {
+        position: relative;
+        top:0;
+        height: fit-content;
+    }
+
+    .first {
+        grid-area: first;
+        justify-self: end;
+    }
+
+    .second {
+        grid-area: second;
+        justify-self: start;
+    }
+
+    .email {
+        grid-area: email;
+    }
+    .separator {
+        grid-area: separator;
+    }
+    .phone {
+        grid-area: phone;
+    }
 }
 
 /* mobile portrait breakpoint
@@ -619,6 +664,29 @@
     .images ul {
         left: 0 !important;
         transform: translate(-.5rem) !important;
+    }
+    #social ul{
+        padding:2rem;
+        display: grid;
+        grid-template-columns: repeat(6, 45px);
+        grid-template-rows: repeat(3, 33px) 2px;
+        justify-content: center;
+        grid-template-areas:
+        "first first first second second second"
+        "email email email email email email"
+        "phone phone phone phone phone phone"
+        "separator separator separator separator separator separator";  
+    }
+
+    .first {
+        align-self: self-end;
+    }
+    .second {
+        align-self: self-end;
+    }
+
+    .separator {
+        visibility: hidden;
     }
     
 }
