@@ -15,7 +15,30 @@
         <link rel="stylesheet" href="UXPortfolioStyle-mobile.css">
         <style>
             @media (max-width:970px){
-                
+                .buttonUnder {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    right: 0;
+                    z-index: 0;
+                    border: 0;
+                    background:transparent;
+                    cursor: pointer;
+                    pointer-events: auto;
+                    touch-action: manipulation;
+                    -webkit-tap-hightlight-color:rgba(0,0,0,0);
+                    margin:0;
+                    padding:32px 25px;
+                    background-color: rgba(25, 25, 27, 0.5);
+                    outline:none;
+                }
+
+                .button:focus {outline: none;}
+
+                .button {
+                    opacity: 0;
+                }
                 #bgImage {
                     height: 20rem;
                     position: relative;
@@ -304,7 +327,11 @@
             </div>
         </nav>
         <header id="header">
-            
+            <div class="buttonUnder" tabindex="0">
+                <span class="icon-bar a1"></span>
+                <span class="icon-bar a2"></span>
+                <span class="icon-bar a3"></span>
+              </div>
             <div id="logo">
                 <a href="UXPortfolio.html">
                 <svg width="200px" height="46px" viewBox="0 0 1940 444" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
