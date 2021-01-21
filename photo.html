@@ -59,6 +59,13 @@
                 max-width: 850px;
             }
 
+            #photoBig {
+                    display: block;
+                }
+            #photoSmall {
+                display: none;
+            }
+
             @media (max-width: 1310px) {
                 #photoContent {
                     width:90%
@@ -103,7 +110,7 @@
                 }
 
                 #sitePreview {
-                    width:80%;
+                    width:100%;
                     min-width: 360px;
                     padding-bottom:11rem;
 
@@ -111,7 +118,19 @@
                 #sitePreview img {
                     width:80vw;
                     min-width: 360px;
+                    margin:0 auto;
                     
+                }
+
+                #photoBig {
+                    display: none;
+                }
+                #photoSmall {
+                    display: block;
+                }
+
+                #social {
+                    position: relative;
                 }
 
             }
@@ -302,7 +321,7 @@
                 </p>
             </div>
             <div id="sitePreview">
-                <a href="https://www.dscottclarkphoto.com/" target="_blank"><img src="images/photography.jpg"></a>
+                <a href="https://www.dscottclarkphoto.com/" target="_blank"><img id="photoBig"  src="images/photography.jpg"><img id="photoSmall" src="images/photographyFade.jpg"></a>
             </div>
         </section>
         <footer id="social">
@@ -316,6 +335,6 @@
                 <li class="separator">|</li>
                 <li class="phone">812.381.3800</li>
             </ul>
-        </section>
+        </footer>
     </body>
 </html>
