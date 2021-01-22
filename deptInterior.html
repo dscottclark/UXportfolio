@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="UXPortfolioStyle.css">
         <link rel="stylesheet" href="UXPortfolioStyle-child.css">
         <link rel="stylesheet" href="UXPortfolioStyle-mobile.css">
+        <link rel="stylesheet" href="caseStudyStyle.css">
         <script type="text/javascript">
             //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -36,7 +37,10 @@ function topFunction() {
         </script>
     </head>
     <body>
-        <div id="header">
+        <section id="headerBG">
+            
+        </section>
+        <header id="header">
             <div id="menu">
                 <ul>
                     <li><a href="UXPortfolio.html">design</a></li>
@@ -199,31 +203,29 @@ function topFunction() {
     </g>
 </svg>
                 </div></a>
-        </div>
-        <div id="portfolioContent">
-            <div id="intro">
-                <div class="DOIdesktop">
-                    <img src="images/GovRedesign/DesktopShortFade.jpg" />
+            </header>
+            <section id="introContent">
+                <div id="intro">
+                    <img class="photoBig" src="images/GovRedesign/introDesktop.jpg">
+                    <img class="photoSmall" src="images/GovRedesign/introMobile.jpg">
+                    <!--
+                    <div id="csMenu">
+                        <ul>
+                            <li><a href="#empathy">empathy</a></li>
+                            <li><a href="#definition">definition</a></li>
+                            <li><a href="#ideation">ideation</a></li>
+                            <li><a href="#prototyping">prototyping</a></li>
+                            <li><a href="#design">user interface design</a></li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                    <h1 class="introDesktop">Rocky<br> Mountain <br> Railroad <br> Club</h1>
+                    <h1 class="introMobile">Rocky Mountain <br>Railroad Club</h1>    
+                    <h3>website redesign concept</h3>
+                    </div>
                 </div>
-                <div class="DOImobile">
-                    <img src="images/GovRedesign/MobileShortFade.jpg" />
-                </div>
-                <div id="csMenu">
-                    <ul>
-                        <li><a href="#research">research</a></li>
-                        <li><a href="#styleTile">style tile</a></li>
-                        <li><a href="#heuristic">hueristic evaluations</a></li>
-                        <li><a href="#siteMap">site map</a></li>
-                        <li><a href="#wireframes">wireframes</a></li>
-                        <li><a href="#protos">prototypes</a></li>
-                    </ul>
-                </div>
-                <div class="title">
-                <h1 class="introDesktop">U.S.<br> Department <br> of the <br> Interior</h1>
-                <h1 class="introMobile">U.S. Department of <br>the Interior</h1>    
-                <h3>website redesign concept</h3>
-                </div>
-            </div>
+                -->
+            </section>
             <div id="caseStudy">
                      
                 <img src="images/GovRedesign/caseStudy/Slide%2002.png" alt="Project Overview">

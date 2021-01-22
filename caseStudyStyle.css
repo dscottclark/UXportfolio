@@ -1,3 +1,23 @@
+li a:hover {
+    background-color: rgba(250, 250, 250, 0.1);
+    border-radius: 5px;
+}
+
+#introContent {
+    position: relative;
+    width:100%;
+    max-width: 2000px;
+    left:0;
+    top:0;
+    margin-bottom: -.5rem;
+    height: fit-content;
+    z-index: 2;
+}
+#intro {
+    height: unset;
+    background-color: unset;
+}
+
 #caseStudyContent {
     position:absolute;
     top:824px;
@@ -6,6 +26,12 @@
     background-color: #fefefe;
     height: fit-content;
 
+}
+
+#caseStudyContent {
+    position: relative;
+    top:0;
+    padding-top: 2rem;
 }
 
 #caseStudyContent h2 {
@@ -185,6 +211,10 @@
 
 }
 
+.storyboard img{
+    width:100%;
+}
+
 
 
 
@@ -199,7 +229,7 @@
     }
 
     #caseStudyContent {
-        top:697px;
+        top:0;
     }
 
     #caseStudyContent ul{
@@ -208,6 +238,13 @@
 
     #caseStudyContent img{
         overflow-y: scroll;
+    }
+
+    #caseStudy {
+        top:0;
+        position: relative;
+        width:100%;
+        min-width: auto;
     }
 
     .svg90 {
@@ -253,6 +290,16 @@
 
 @media (max-width:640px) {
     
+    #headerBG{
+        display: none;
+    }
+    
+    .photoBig {
+        display: none;
+    }
+    .photoSmall {
+        display: block;
+    }
     
 
     #csMenu {

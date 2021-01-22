@@ -37,6 +37,8 @@ function topFunction() {
 }
         </script>
         <style>
+
+
             #brain {
                 display: block;
                 width: 416.5px;
@@ -247,6 +249,17 @@ function topFunction() {
             }
 
             @media (max-width: 640px) {
+                #headerBG{
+                    display: none;
+                }
+                
+                .photoBig {
+                    display: none;
+                }
+                .photoSmall {
+                    display: block;
+                }
+
                 .DOIdesktop {
                     width:76%;
                     left:7%;
@@ -298,6 +311,9 @@ function topFunction() {
         </style>
     </head>
     <body>
+        <section id="headerBG">
+            
+        </section>
         <header id="header">
             <div id="menu">
                 <ul>
@@ -464,14 +480,11 @@ function topFunction() {
                 </div>
             </a>
         </header>
-        <section id="portfolioContent">
+        <section id="introContent">
             <div id="intro">
-                <div class="DOIdesktop">
-                    <img src="images/RMRC/homepageFade.jpg" />
-                </div>
-                <div class="DOImobile">
-                    <img src="images/RMRC/mobileHomeFade.jpg" />
-                </div>
+                <img class="photoBig" src="images/RMRC/caseStudy/hero/Intro.jpg">
+                <img class="photoSmall" src="images/RMRC/caseStudy/hero/introMobile.jpg">
+                <!--
                 <div id="csMenu">
                     <ul>
                         <li><a href="#empathy">empathy</a></li>
@@ -487,8 +500,9 @@ function topFunction() {
                 <h3>website redesign concept</h3>
                 </div>
             </div>
-            
+            -->
         </section>
+        
         <section id="caseStudyContent">
             <section id="sect01" alt="overview">
                 <div class="textContainer">
