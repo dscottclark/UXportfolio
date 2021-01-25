@@ -1,2 +1,0 @@
-# UXportfolio
- UX Design Portfolio

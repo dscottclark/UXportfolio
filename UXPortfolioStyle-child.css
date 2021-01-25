@@ -20,13 +20,14 @@ h4 {
 }
 
 
+
 #portfolioContent {
-    position: absolute;
+    position: relative;
     width: 100%;
     left: 0;
     top: 0;
-    height: 740px;
     background-color: #252526;
+    height: fit-content;
 }
 
 #intro {
@@ -134,8 +135,8 @@ display: none;
 
 
 #caseStudy {
-    position: absolute;
-    top:740px;
+    position: relative;
+    top:0;
     width:80%;
     max-width: 2000px;
     min-width: 1000px;
@@ -158,9 +159,9 @@ display: none;
 }
 
 #csMenu {
-    position: absolute;
+    position: sticky;
     display: block;
-    top:687px;
+    top:83px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -169,8 +170,9 @@ display: none;
     width: 100%;
     text-align: center;
     height: 52px;
+    margin: 8px 0 0;
     background-color: #303133; 
-    
+    z-index: 1;
   
 }
 
@@ -178,8 +180,13 @@ display: none;
     padding: 0;
     left: 50%;
     position: relative;
-    transform: translate(-20%, 25%);
+    transform: translate(-50%, 25%);
     margin: 0;
+    width: fit-content;
+}
+
+.Btn {
+    display: none;
 }
 
 li a:hover, li a:active {
@@ -188,7 +195,7 @@ li a:hover, li a:active {
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    background-color: #3e3e3e;
+    background-color: rgba(255,255,255, 0.1);
 }
 
 #backtoTop {

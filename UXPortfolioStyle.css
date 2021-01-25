@@ -77,6 +77,7 @@ a {
     height: 84px;
     z-index: 1000;
 }
+
 @media (min-width: 1080px) {
     #menu {
         position: absolute;
@@ -139,6 +140,12 @@ li a:hover {
     display: none;
 }
 
+#intro {
+    position: relative;
+    top:84px;
+    height: 569px;
+}
+
 #bgImage {
     position: fixed;
     top:84px;
@@ -155,11 +162,10 @@ li a:hover {
 }
 
 #hello {
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 485px;
     left: 0px;
-    top: 84px;
     background-color: transparent;
     font-family: montserrat;
     font-size: 25px;
@@ -289,23 +295,21 @@ li a:hover {
 #portfolio::before { 
   display: block; 
   content: " "; 
-  margin-top: -285px; 
-  height: 285px; 
   visibility: hidden; 
   pointer-events: none;
 }
 
 #portfolio{
-    position: absolute;
+    position: relative;
     width: 100%;
     left: 0;
-    top: 569px;
+    top: 0;
     background-color: #171717;
 }
 
 a.portfolioAnchor {
     position: relative;
-    top:-100px;
+    top:-88px;
     display: block;
     visibility: hidden;
 
@@ -396,7 +400,7 @@ a.portfolioAnchor {
 
 
 #port02 {
-    position: absolute;
+    position: relative;
     background-color: #252526;
     overflow: hidden;
     width: 100%;
@@ -436,18 +440,17 @@ a.portfolioAnchor {
 }
 
 #port03 {
-    position: absolute;
+    position: relative;
     background-color: #2b2b2d;
     overflow: hidden;
     width: 100%;
     height: 485px;
     z-index: 5;
-    top:970px;
     
 }
 
 #ink {
-    position: absolute;
+    position: relative;
     left: 40%;
     top:40px;
 }
@@ -463,13 +466,12 @@ a.portfolioAnchor {
     width: 55%;
 }
 #port04 {
-    position: absolute;
+    position: relative;
     background-color: #252526;
     overflow: hidden;
     width: 100%;
     height: 485px;
     z-index: 5;
-    top: 1455px;
     
 }
 #travelize {
@@ -491,14 +493,14 @@ a.portfolioAnchor {
 a.anchor {
     display: block;
     position: relative;
-    top: 350px;
+    top: -205px;
     visibility: hidden;
     
 }
 
 #social {
-    position: absolute;
-    top:2509px;
+    position: relative;
+    top:0;
     width: 100%;
     height: 84px;
     background-color: #19191B;
