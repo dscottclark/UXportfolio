@@ -15,12 +15,13 @@
         <link rel="icon" 
           type="image/png" 
           href="https://design.dscottclark.com/portfolio/images/favicon.png">
-        <link rel="stylesheet" href="UXPortfolioStyle.css">
-        <link rel="stylesheet" href="UXPortfolioStyle-child.css">
-        <link rel="stylesheet" href="UXPortfolioStyle-mobile.css">
-        <link rel="stylesheet" href="caseStudyStyle.css"> 
+        <link rel="stylesheet" href="css/UXPortfolioStyle.css">
+        <link rel="stylesheet" href="css/UXPortfolioStyle-child.css">
+        <link rel="stylesheet" href="css/UXPortfolioStyle-mobile.css">
+        <link rel="stylesheet" href="css/caseStudyStyle.css">
 
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/universal.js"></script>
         
         <style>
             #intro {
@@ -202,37 +203,12 @@
     </head>
     <body>
         <section id="headerBG">
-            
+            <!--grey background-->
         </section>
         <header id="header">
-            <nav id="menu">
-                <ul>
-                    <li><a href="UXPortfolio.html">design</a></li>
-                    <li><a href="photo.html">photography</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </nav>
-            <nav id="nav-container">
-                <div class="bg"></div>
-                <div class="button" tabindex="0">
-                  <span class="icon-bar a1"></span>
-                  <span class="icon-bar a2"></span>
-                  <span class="icon-bar a3"></span>
-                </div>
-                <div id="nav-content" tabindex="0">
-                  <ul>
-                    <li><a href="UXPortfolio.html">design</a></li>
-                    <li><a href="photo.html">photography</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <a href="UXPortfolio.html"><div id="logo">
-                <img src="icons/dscottdesign.svg">
-                </div></a>
+            <!--Inserts universal header-->
         </header>
+
         <section id="introContent">
             <div id="intro">
                 
@@ -317,6 +293,11 @@
                 
             </div>
         </section>
+
+        <footer id="social">
+                
+        </footer>
+
         <script type="text/javascript">
                         //Get the button:
             mybutton = document.getElementById("myBtn");

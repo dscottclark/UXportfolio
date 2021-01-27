@@ -10,27 +10,27 @@
         <meta property="og:image" content="images/doi.jpg" />
         <link rel="icon" type="image/png" href="images/favicon.png"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Raleway:wght@900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="UXPortfolioStyle.css">
-        <link rel="stylesheet" href="UXPortfolioStyle-mobile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/UXPortfolioStyle.css">
+        <link rel="stylesheet" href="css/UXPortfolioStyle-mobile.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            <!--
+        <script src="js/universal.js"></script>
+        <script>
+            
             if (screen.width <= 970) {
-            document.location = "mobilePortfolio.html";
+            document.location = "mIndex.html";
             };
-            $(function(){
-                $("#header").load("header.html");
-                $("#social").load("footer.html");
-                });
            
-            </script>
+        </script>
         <style>
-            body {
-            }
+            
             #about h1{
                 font-family: raleway;
                 font-size: 2v;
+            }
+
+            #bgImage img::before {
+                background-image: url(images/profileheadSM.png);
             }
 
             #ink {
@@ -57,6 +57,7 @@
         </header>
         <section id="intro">
             <div id="bgImage">
+
                 <img src="images/profilehead.png" />
             </div>
             <div id="hello">
@@ -91,12 +92,12 @@
                 </div>
                 <div class="desktop">
                     <a href="deptInterior.html">
-                    <img src="images/GovRedesign/DesktopShort.jpg" />
+                    <img src="images/GovRedesign/hero/DesktopShort.jpg" />
                         </a>
                 </div>
                 <div class="mobile">
                     <a href="deptInterior.html">
-                    <img src="images/GovRedesign/MobileShort.jpg" />
+                    <img src="images/GovRedesign/hero/MobileShort.jpg" />
                     </a>
                 </div>
                 
@@ -104,16 +105,16 @@
             <div id="port02">
                 <div class="desktop02">
                     <a href="rmrc.html">
-                    <img src="images/RMRC/homepageShort.jpg" />
+                    <img src="images/RMRC/pages/homepageShort.jpg" />
                     </a>
                 </div>
                 <div class="mobile02">
                     <a href="rmrc.html">
-                    <img src="images/RMRC/mobileHomeShort.jpg" />
+                    <img src="images/RMRC/pages/mobileHomeShort.jpg" />
                     </a>
                 </div>
                     <div class="heroText">
-                        <a href="railroad.html">
+                        <a href="rmrc.html">
                             <h1>Rocky Mountain Railroad Club</h1>
                             <h3>website redesign concept</h3>
                             </a>
@@ -125,17 +126,17 @@
                         <ul>
                             <li>
                                 <div class="ink1">
-                                    <img src="images/ink/Splash.jpg" />
+                                    <img src="images/ink/hero/Splash.jpg" />
                                 </div>
                             </li>
                             <li>
                                 <div class="ink2">
-                                    <img src="images/ink/Login1.jpg" />
+                                    <img src="images/ink/hero/Login1.jpg" />
                                 </div>
                             </li>
                             <li>
                                 <div class="ink3">
-                                    <img src="images/ink/Dashboard1.jpg" />
+                                    <img src="images/ink/hero/Dashboard1.jpg" />
                                 </div>
                             </li>
                             
@@ -156,17 +157,17 @@
                         <ul>
                             <li>
                                 <div class="ink1">
-                                    <img src="images/Travelize/Splash%20Screen.jpg" />
+                                    <img src="images/Travelize/hero/Splash%20Screen.jpg" />
                                 </div>
                             </li>
                             <li>
                                 <div class="tr2">
-                                    <img src="images/Travelize/Dashboard.jpg" />
+                                    <img src="images/Travelize/hero/Dashboard.jpg" />
                                 </div>
                             </li>
                             <li>
                                 <div class="tr3">
-                                    <img src="images/Travelize/Search%20Result%201.jpg" />
+                                    <img src="images/Travelize/hero/Search%20Result%201.jpg" />
                                 </div>
                             </li>
                             
