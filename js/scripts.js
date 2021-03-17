@@ -1,3 +1,4 @@
+
 /*!
     * Start Bootstrap - Agency v6.0.3 (https://startbootstrap.com/theme/agency)
     * Copyright 2013-2020 Start Bootstrap
@@ -30,16 +31,14 @@
         }
     });
 
+   
+
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
     });
 
-    // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
-        target: "#mainNavs",
-        offset: 74,
-    });
+   
 
     // Collapse Navbar
     var navbarCollapse = function () {
@@ -54,3 +53,4 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+

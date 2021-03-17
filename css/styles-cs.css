@@ -6,9 +6,32 @@
         font-size: 3.1rem;
     }
 }
+@media (min-width: 1200px)
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container-md, .container-sm, .container {
+    max-width: 720px;
+}
+
+@media (min-width: 576px)
+.container-sm, .container {
+    max-width: 540px;
+}
 html {
     scroll-behavior: smooth;
   }
+
+body {
+    background-color: #fff;
+    color:#222;
+    font-weight: 400;
+}
 
 ul {
     list-style-type: unset;
@@ -18,9 +41,124 @@ li {
     float: unset;
 }
 
+h3 {
+    color:#353535;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #222;
+    font-family: Montserrat;
+}
+
+.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background:rgba(0, 0, 0, 0.5) repeat; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    transition: all .3s ease-in-out;
+}
+
+#lightbox p {
+    color:#fff; 
+    margin:20px; 
+    font-size:16px; 
+    font-family: raleway;
+    font-weight: 600;
+    cursor: pointer;
+    }
+#lightbox img {
+box-shadow:0 0 25px #111;
+max-width: 1500px;
+max-height: 100vh;
+object-fit: cover;
+}
+
 #header {
     display: flex;
     align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+header.masthead {
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+}
+
+header.masthead .max-width {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (min-width: 768px) {
+header.masthead .masthead-heading {
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 4.5rem;
+    }
+}
+
+header.masthead .masthead-heading {
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 3.25rem;
+    margin-bottom: .5rem;
+    font-family: "Raleway", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: none !important;
+}
+
+header.masthead .masthead-subheading {
+    font-size: 2.5vw;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    font-weight:100;
+}
+
+@media screen and (min-width: 2000px) {
+    header.masthead .masthead-heading {
+        font-size: 6rem;
+    }
+    header.masthead .masthead-subheading {
+        font-size: 3.5rem;
+        line-height: 6.25rem;
+    }
+    
+}
+
+@media screen and (min-width: 2000px) {
+    header.masthead {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    
 }
 
 header ul{
@@ -32,12 +170,74 @@ header li {
     margin:0;
 }
 
+
+
+.page-section h2.section-heading {
+    color: rgb(148, 0 ,0);
+    font-size: 2rem;
+    padding: 3rem 0 0 0;
+}
+
+.my-3 {
+    margin:3rem 0 2rem;
+}
+
+
+@media (min-width: 992px)
+.navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
 .navbar {
     padding: 0;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:#fff;
+}
+
+.navbar-dark .navbar-toggler {
+    border:hidden;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 1px;
+}
+
 #subMenu {
-    height: 52px;
+    height: 50px;
+    background-color: #2B2B2D;
+}
+
+#subMenu a{
+    color: #999;
+}
+
+#subMenu a:hover {
+    color:#ededed
+}
+
+.navbar-brand {
+    cursor:default;
+    color:#999 !important;
+}
+
+#subMenu .max-width {
+    align-items: center;
+    justify-content: center;
+    width: 870px;
+}
+
+#subMenu .sub-navbar-nav {
+    position: relative;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
 }
 
 li a:hover {
@@ -50,13 +250,22 @@ li a:hover {
   
 .heroMobile {
     width: 23vw;
-    padding-bottom: 2rem;
+    padding: 8rem 0 4rem;
     max-width: 460px;
     
 }
 
+.heroDesktop {
+    width: 45%;
+    padding:6rem 0 2rem;
+
+}
+
 .sticky-top {
-    top:80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 84px;
+    z-index: 400;
 }
 
 #subMenu .navbar-nav .nav-item .nav-link {
@@ -94,13 +303,39 @@ a.portfolioAnchor {
     padding: 9rem 0;
 }
 
+.page-section {
+    padding:2rem 0;
+}
+
+.page-section .max-width {
+    justify-content: center;
+}
+
 .page-section p{
     color:#222;
     font-weight: 400;
 }
 .page-section img{
     width: 100%;
+    padding: 1rem 0 2rem;
 }
+
+.dark25 {
+    background-color: #252525;
+    color:#ededed;
+}
+
+.dark35 {
+    background-color: #353535;
+
+}
+.dark.page-section h2.section-heading {
+    color: #ededed;
+}
+.dark.page-section p {
+    color: #ededed;
+}
+
 
 #userResearch img{
     padding:1rem 0 1rem;
@@ -113,12 +348,21 @@ a.portfolioAnchor {
     padding:0 0 4rem;
 }
 
+.CSheroImage {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .CSheroImage img{
     width: 100vw;
 }
 
 section .heroSpread {
     padding:0;
+}
+
+.playProto .max-width {
+    flex-direction: column;
 }
 
 .protoPlay {
@@ -149,9 +393,91 @@ section .heroSpread {
     width: 650px;
 }
 
+#mobileVideo {
+    display: flex;
+    position: relative;
+    top: 0;
+    margin: 1rem auto;
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+}
+
+#video iframe{
+    height: 650px;
+}
+
 #final p{
     color:#ededed;
 }
+
+#finalThoughts a{
+    color:#bbc1ff
+}
+#finalThoughts a:hover{
+    color:#6a79ff
+}
+
+#otherProjects {
+    width:100%;
+    height: fit-content;
+    background-color: #2b2b2d;
+    text-align: center;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+#otherProjects h2 {
+    color:#ededed;
+    padding-top:3rem;
+}
+
+.flexBox {
+    display: inline-flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: space-around; 
+    align-content: center;
+    height: 20vw;
+}
+
+.portfolioLink{
+    margin:0 1rem;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.portfolioLink img{
+    width: 17vw;
+    height: 17vw;
+    max-width: 500px;
+    max-height: 500px;
+    display: block;
+}
+
+.portfolioLink:hover img {
+    opacity: .3;
+    transition:all .3s ease-in-out;
+}
+
+.portfolioLink h3 {
+    padding: 2rem;
+    position: absolute;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 200;
+    color:#ededed;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.portfolioLink:hover h3 {
+    opacity: 1;
+}
+
 
 @media screen and (max-width: 992px) {
     h2 {
@@ -164,8 +490,66 @@ section .heroSpread {
     .navbar-nav {
         align-items: flex-end;
     }
+
+    button:focus {
+        margin-left: 0;
+    }
     .sticky-top {
-        top:79px;
+        top:50px;
+    }
+
+    #subMenu .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    #subMenu button:focus {
+        outline: none;
+    }
+
+    #subMenu .navbar-toggler-icon {
+        left: unset;
+        margin: 3px 0 0 6rem;
+        opacity: 0.5;
+    }
+
+    #subMenu .navbar-brand {
+        position: absolute;
+    }
+
+    #subMenu .navbar-collapse {
+        margin: 0 auto;
+        width: max-content;
+        padding: 0 2rem;
+        position: absolute;
+        left: unset;
+    }
+
+    #subMenu .navbar-toggler-icon {
+        background-image: url(icons/chevron-right.svg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translate(-2rem);
+    }
+    #subMenu .navbar-toggler-icon img{
+        height: 20px;
+        transform: rotate(90deg);
+    }
+
+    #subMenu .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        left:0;
+        width: 0;
+        margin: 0 0 0 5rem;
+    }
+
+    #subMenu .sub-navbar-nav {
+        flex-direction: column;
+        height: max-content;
+        padding: 0 2rem 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #2b2b2d;
     }
 
     #subMenu .container-fluid {
@@ -173,6 +557,7 @@ section .heroSpread {
         background-color: #343a40 ;
         display: flex;
         justify-content: center;
+        height: 50px;
     }
 
     #subMenu ul {
@@ -183,7 +568,7 @@ section .heroSpread {
     }
 
     #subMenu li {
-        padding:10px 0;
+        padding:1rem 1rem 0;
     }
     
     .heroMobile {
@@ -205,15 +590,14 @@ section .heroSpread {
         font-size: 1rem;
         padding:15px 10px;
     }
-    .fixed-top {
-        position: absolute;
-    }
-    .sticky-top {
-        top: 0;
-    }
     
-    .heroMobile {
+    img.heroMobile {
         width: 50vw;
+    }
+
+    header.masthead {
+        padding-top:5rem;
+        padding-bottom:1rem;
     }
     header.masthead .masthead-heading {
         font-size: 13vw;
